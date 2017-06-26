@@ -1,0 +1,159 @@
+{
+	"Print to console": {
+		"prefix": "u-ci",
+		"body": [
+			"console.info('$1');"
+		],
+		"description": "Log output to console"
+	},
+	"Class Constructor": {
+		"prefix": "u-ctor",
+		"body": [
+			"constructor(props) {",
+			"\tsuper(props);",
+			"\t$0",
+			"}"
+		],
+		"description": "Class constructor"
+	},
+	"Import Statement": {
+		"prefix": "u-impt",
+		"body": [
+			"import $2 from '$1';$0"
+		],
+		"description": "Import module"
+	},
+	"Stateless component": {
+		"prefix": "u-rfc",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"import styles from './$1.scss';",
+			"",
+			"export default function $1({ prop }) {",
+			"\treturn (",
+			"\t\t$2",
+			"\t);",
+			"}",
+			"",
+			"$1.propTypes = {",
+			"",
+			"};"
+		],
+		"description": "Stateless component"
+	},
+	"Stateful component": {
+		"prefix": "u-rcc",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"import styles from './$1.scss';",
+			"",
+			"export default class $1 extends React.Component {",
+			"\trender() {",
+			"\t\t$0",
+			"\t}",
+			"}",
+			"",
+			"$1.propTypes = {",
+			"",
+			"};"
+		],
+		"description": "Stateful component"
+	},
+	"Test": {
+		"prefix": "u-it",
+		"body": [
+			"it('$1', () => {",
+			"\tconst wrapper = shallow(<$2 />);",
+			"\texpect(wrapper.$0).toBeTruthy();",
+			"});"
+		],
+		"description": "New unit test"
+	},
+	"Test Suite": {
+		"prefix": "u-desc",
+		"body": [
+			"describe('$1', () => {",
+			"\t$0",
+			"});"
+		],
+		"description": "New test suite"
+	},
+	"Test Suite File": {
+		"prefix": "u-suite",
+		"body": [
+			"import React from 'react';",
+			"import $1 from './$1';",
+			"import renderer from 'react-test-renderer';",
+			"import { shallow } from 'enzyme';",
+			"",
+			"describe('$1', () => {",
+			"\tit('should render', () => {",
+			"\t\tconst wrapper = shallow(<$1 />);",
+			"\t\texpect(wrapper.find('div').node).toBeTruthy();",
+			"\t});",
+			"});"
+		],
+		"description": "Jest Test Suite"
+	},
+	"PropTypes": {
+		"prefix": "u-pt",
+		"body": [
+			"$1: PropTypes.$2.isRequired"
+		],
+		"description": "React PropType"
+	},
+	"PropTypes.String": {
+		"prefix": "u-pts",
+		"body": [
+			"$1: PropTypes.string.isRequired$2"
+		],
+		"description": "React PropType String"
+	},
+	"PropTypes.Number": {
+		"prefix": "u-ptn",
+		"body": [
+			"$1: PropTypes.number.isRequired$2"
+		],
+		"description": "React PropType Number"
+	},
+	"PropTypes.Bool": {
+		"prefix": "u-ptb",
+		"body": [
+			"$1: PropTypes.bool.isRequired$2"
+		],
+		"description": "React PropType Bool"
+	},
+	"PropTypes.Func": {
+		"prefix": "u-ptf",
+		"body": [
+			"$1: PropTypes.func.isRequired$2"
+		],
+		"description": "React PropType Func"
+	},
+	"Redux actions": {
+		"prefix": "u-actions",
+		"body": [
+			"import { call, put, takeLatest } from 'redux-saga/effects';",
+			"",
+			"export const $1 = '$1';",
+			"export const $2 = () => ({",
+			"\ttype: $1",
+			"});",
+			"",
+			"export default function* watch$3() {",
+			"\tyield takeLatest($1, $4);",
+			"}"
+		]
+	},
+	"Redux action": {
+		"prefix": "u-action",
+		"body": [
+			"export const $1 = '$1';",
+			"export const $2 = () => ({",
+			"\ttype: $1",
+			"});"
+		]
+	}
+}

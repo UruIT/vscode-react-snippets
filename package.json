@@ -1,0 +1,22 @@
+{
+    "name": "uruit-react-snippets",
+    "displayName": "Uruit React Snippets",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "UruIT",
+    "icon": "./images/uruit-logo.png",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

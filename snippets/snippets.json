@@ -147,7 +147,7 @@
 		"description": "React PropType Object"
 	},
 	"PropTypes.Symbol": {
-		"prefix": "u-pty",
+		"prefix": "u-ptsymbol",
 		"body": [
 			"$1: PropTypes.symbol.isRequired$2"
 		],
@@ -161,49 +161,49 @@
 		"description": "React PropType Element"
 	},
 	"PropTypes.Node": {
-		"prefix": "u-ptd",
+		"prefix": "u-ptnode",
 		"body": [
 			"$1: PropTypes.node.isRequired$2"
 		],
 		"description": "React PropType Node"
 	},
 	"PropTypes.InstanceOf": {
-		"prefix": "u-ptio",
+		"prefix": "u-ptinstanceof",
 		"body": [
 			"$1: PropTypes.instanceOf($2)$3"
 		],
 		"description": "React PropType InstanceOf"
 	},
 	"PropTypes.OneOf": {
-		"prefix": "u-ptof",
+		"prefix": "u-ptoneof",
 		"body": [
 			"$1: PropTypes.oneOf([$2])$3"
 		],
 		"description": "React PropType OneOf"
 	},
 	"PropTypes.OneOfType": {
-		"prefix": "u-ptoft",
+		"prefix": "u-ptoneoftype",
 		"body": [
 			"$1: PropTypes.oneOfType([PropTypes.$2])$3"
 		],
 		"description": "React PropType OneOfType"
 	},
 	"PropTypes.ArrayOf": {
-		"prefix": "u-ptao",
+		"prefix": "u-ptarrayof",
 		"body": [
 			"$1: PropTypes.arrayOf(PropTypes.$2).isRequired$3"
 		],
 		"description": "React PropType ArrayOf"
 	},
 	"PropTypes.ObjectOf": {
-		"prefix": "u-ptoo",
+		"prefix": "u-ptobjectof",
 		"body": [
 			"$1: PropTypes.objectOf(PropTypes.$2).isRequired$3"
 		],
 		"description": "React PropType Object"
 	},
 	"PropTypes.Shape": {
-		"prefix": "u-ptsh",
+		"prefix": "u-ptshape",
 		"body": [
 			"$1: PropTypes.shape({$2}).isRequired$3"
 		],
@@ -220,10 +220,21 @@
 		"prefix": "u-ptcustom",
 		"body": [
 			"function (props, propName, componentName) {",
-			"\tif (!/$1/.test(props[propName]) {",
+			"\tif (!/$1/.test(props[propName])) {",
 			"\t\treturn new Error(`Invalid prop '${propName}' supplied to '${componentName}'. Validation $2`);",
 			"\t}",
 			"}"
+		],
+		"description": "React PropType Any"
+	},
+	"PropTypes.CustomArrayProp": {
+		"prefix": "u-ptcustomarrayof",
+		"body": [
+			"PropTypes.arrayOf(function (propValue, key, componentName, location, propFullName) {",
+			"\tif (!/$1/.test(propValue[key])) {",
+			"\t\treturn new Error(`Invalid prop '${propFullName}' supplied to '${componentName}'. Validation $2`);",
+			"\t}",
+			"})"
 		],
 		"description": "React PropType Any"
 	},

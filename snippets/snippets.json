@@ -182,7 +182,7 @@
 		"description": "React PropType OneOf"
 	},
 	"PropTypes.OneOfType": {
-		"prefix": "u-ptof",
+		"prefix": "u-ptoft",
 		"body": [
 			"$1: PropTypes.oneOfType([PropTypes.$2])$3"
 		],

@@ -5,6 +5,7 @@ Extension for Visual Studio Code to add snippets for React in ECMA Script 6.
 ![Extension demo](./images/snippet-demo.gif)
 
 ## Usage
+
 Type the snippet prefix and press enter.
 
 ```javascript
@@ -21,6 +22,19 @@ u-pts		// String PropType
 u-ptn		// Number PropType
 u-ptb		// Bool PropType
 u-ptf		// Func PropType
+u-pta		// Array PropType
+u-pto		// Object PropType
+u-pty		// Symbol PropType
+u-pte		// Element PropType
+u-ptd		// Node PropType
+u-ptio		// Instance Of (PropType)
+u-ptof		// One Of (PropType)
+u-ptoft		// One Of Type (PropType)
+u-ptao		// Array Of (PropType)
+u-ptoo		// Object Of (PropType)
+u-ptsh		// Shape (PropType)
+u-ptany		// Any PropType
+u-ptcustom	// Custom PropType
 u-actions	// Redux actions
 u-action	// Redux action
 ```

@@ -1,0 +1,30 @@
+{
+	"name": "uruit-react-snippets",
+	"displayName": "Uruit React Snippets",
+	"description": "",
+	"version": "0.0.1",
+	"publisher": "UruIT",
+	"icon": "./images/uruit-logo.png",
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"homepage": "https://github.com/UruIT/vscode-react-snippets",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/UruIT/vscode-react-snippets.git"
+	},
+	"bugs": {
+		"url": "https://github.com/UruIT/vscode-react-snippets/issues"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	}
+}

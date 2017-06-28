@@ -1,0 +1,267 @@
+{
+	"Print to console": {
+		"prefix": "u-ci",
+		"body": [
+			"console.info('$1');"
+		],
+		"description": "Log output to console"
+	},
+	"Class Constructor": {
+		"prefix": "u-ctor",
+		"body": [
+			"constructor(props) {",
+			"\tsuper(props);",
+			"\t$0",
+			"}"
+		],
+		"description": "Class constructor"
+	},
+	"Import Statement": {
+		"prefix": "u-impt",
+		"body": [
+			"import $2 from '$1';$0"
+		],
+		"description": "Import module"
+	},
+	"Stateless component": {
+		"prefix": "u-rfc",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"import styles from './$1.scss';",
+			"",
+			"export default function $1({ $2 }) {",
+			"\treturn (",
+			"\t\t$0",
+			"\t);",
+			"}",
+			"",
+			"$1.propTypes = {",
+			"\t$2: PropTypes.$3.isRequired",
+			"};"
+		],
+		"description": "Stateless component"
+	},
+	"Stateful component": {
+		"prefix": "u-rcc",
+		"body": [
+			"import React from 'react';",
+			"import PropTypes from 'prop-types';",
+			"import styles from './$1.scss';",
+			"",
+			"export default class $1 extends React.Component {",
+			"\trender() {",
+			"\t\t$0",
+			"\t}",
+			"}",
+			"",
+			"$1.propTypes = {",
+			"",
+			"};"
+		],
+		"description": "Stateful component"
+	},
+	"Test": {
+		"prefix": "u-it",
+		"body": [
+			"it('$1', () => {",
+			"\tconst wrapper = shallow(<$2 />);",
+			"\texpect(wrapper.$0).toBeTruthy();",
+			"});"
+		],
+		"description": "New unit test"
+	},
+	"Test Suite": {
+		"prefix": "u-desc",
+		"body": [
+			"describe('$1', () => {",
+			"\t$0",
+			"});"
+		],
+		"description": "New test suite"
+	},
+	"Test Suite File": {
+		"prefix": "u-suite",
+		"body": [
+			"import React from 'react';",
+			"import $1 from './$1';",
+			"import renderer from 'react-test-renderer';",
+			"import { shallow } from 'enzyme';",
+			"",
+			"describe('$1', () => {",
+			"\tit('should render', () => {",
+			"\t\tconst wrapper = shallow(<$1 />);",
+			"\t\texpect(wrapper.find('div').node).toBeTruthy();",
+			"\t});",
+			"});"
+		],
+		"description": "Jest Test Suite"
+	},
+	"PropTypes": {
+		"prefix": "u-pt",
+		"body": [
+			"$1: PropTypes.$2.isRequired"
+		],
+		"description": "React PropType"
+	},
+	"PropTypes.String": {
+		"prefix": "u-pts",
+		"body": [
+			"$1: PropTypes.string.isRequired$2"
+		],
+		"description": "React PropType String"
+	},
+	"PropTypes.Number": {
+		"prefix": "u-ptn",
+		"body": [
+			"$1: PropTypes.number.isRequired$2"
+		],
+		"description": "React PropType Number"
+	},
+	"PropTypes.Bool": {
+		"prefix": "u-ptb",
+		"body": [
+			"$1: PropTypes.bool.isRequired$2"
+		],
+		"description": "React PropType Bool"
+	},
+	"PropTypes.Func": {
+		"prefix": "u-ptf",
+		"body": [
+			"$1: PropTypes.func.isRequired$2"
+		],
+		"description": "React PropType Func"
+	},
+	"PropTypes.Array": {
+		"prefix": "u-pta",
+		"body": [
+			"$1: PropTypes.array.isRequired$2"
+		],
+		"description": "React PropType Array"
+	},
+	"PropTypes.Object": {
+		"prefix": "u-pto",
+		"body": [
+			"$1: PropTypes.object.isRequired$2"
+		],
+		"description": "React PropType Object"
+	},
+	"PropTypes.Symbol": {
+		"prefix": "u-ptsymbol",
+		"body": [
+			"$1: PropTypes.symbol.isRequired$2"
+		],
+		"description": "React PropType Symbol"
+	},
+	"PropTypes.Element": {
+		"prefix": "u-pte",
+		"body": [
+			"$1: PropTypes.element.isRequired$2"
+		],
+		"description": "React PropType Element"
+	},
+	"PropTypes.Node": {
+		"prefix": "u-ptnode",
+		"body": [
+			"$1: PropTypes.node.isRequired$2"
+		],
+		"description": "React PropType Node"
+	},
+	"PropTypes.InstanceOf": {
+		"prefix": "u-ptinstanceof",
+		"body": [
+			"$1: PropTypes.instanceOf($2)$3"
+		],
+		"description": "React PropType InstanceOf"
+	},
+	"PropTypes.OneOf": {
+		"prefix": "u-ptoneof",
+		"body": [
+			"$1: PropTypes.oneOf([$2])$3"
+		],
+		"description": "React PropType OneOf"
+	},
+	"PropTypes.OneOfType": {
+		"prefix": "u-ptoneoftype",
+		"body": [
+			"$1: PropTypes.oneOfType([PropTypes.$2])$3"
+		],
+		"description": "React PropType OneOfType"
+	},
+	"PropTypes.ArrayOf": {
+		"prefix": "u-ptarrayof",
+		"body": [
+			"$1: PropTypes.arrayOf(PropTypes.$2).isRequired$3"
+		],
+		"description": "React PropType ArrayOf"
+	},
+	"PropTypes.ObjectOf": {
+		"prefix": "u-ptobjectof",
+		"body": [
+			"$1: PropTypes.objectOf(PropTypes.$2).isRequired$3"
+		],
+		"description": "React PropType Object"
+	},
+	"PropTypes.Shape": {
+		"prefix": "u-ptshape",
+		"body": [
+			"$1: PropTypes.shape({$2}).isRequired$3"
+		],
+		"description": "React PropType Shape"
+	},
+	"PropTypes.Any": {
+		"prefix": "u-ptany",
+		"body": [
+			"$1: PropTypes.any.isRequired$2"
+		],
+		"description": "React PropType Any"
+	},
+	"PropTypes.CustomProp": {
+		"prefix": "u-ptcustom",
+		"body": [
+			"function (props, propName, componentName) {",
+			"\tif (!/$1/.test(props[propName])) {",
+			"\t\treturn new Error(`Invalid prop '${propName}' supplied to '${componentName}'. Validation $2`);",
+			"\t}",
+			"}"
+		],
+		"description": "React PropType Any"
+	},
+	"PropTypes.CustomArrayProp": {
+		"prefix": "u-ptcustomarrayof",
+		"body": [
+			"PropTypes.arrayOf(function (propValue, key, componentName, location, propFullName) {",
+			"\tif (!/$1/.test(propValue[key])) {",
+			"\t\treturn new Error(`Invalid prop '${propFullName}' supplied to '${componentName}'. Validation $2`);",
+			"\t}",
+			"})"
+		],
+		"description": "React PropType Any"
+	},
+	"Redux actions": {
+		"prefix": "u-actions",
+		"body": [
+			"import { call, put, takeLatest } from 'redux-saga/effects';",
+			"",
+			"export const $1 = '$1';",
+			"export const $2 = () => ({",
+			"\ttype: $1",
+			"});",
+			"",
+			"export default function* watch$3() {",
+			"\tyield takeLatest($1, $4);",
+			"}"
+		],
+		"description": "Redux actions"
+	},
+	"Redux action": {
+		"prefix": "u-action",
+		"body": [
+			"export const $1 = '$1';",
+			"export const $2 = () => ({",
+			"\ttype: $1",
+			"});"
+		],
+		"description": "Redux action"
+	}
+}

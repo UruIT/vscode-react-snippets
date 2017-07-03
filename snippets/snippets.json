@@ -263,5 +263,12 @@
 			"});"
 		],
 		"description": "Redux action"
+	},
+	"JSX Element className": {
+		"prefix": "u-cn",
+		"body": [
+			"className={styles.$0}"
+		],
+		"description": "JSX element class name"
 	}
 }

@@ -1,10 +1,10 @@
 {
 	"name": "uruit-react-snippets",
 	"displayName": "Uruit React Snippets",
-	"description": "",
-	"version": "0.0.1",
+	"description": "React Snippets with ECMAScript 6",
+	"version": "1.0.0",
 	"publisher": "UruIT",
-	"icon": "./images/uruit-logo.png",
+	"icon": "images/uruit-logo.png",
 	"engines": {
 		"vscode": "^1.13.0"
 	},

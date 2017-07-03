@@ -1,6 +1,6 @@
 # React Snippets for Visual Studio Code
 
-Extension for Visual Studio Code to add snippets for React in ECMA Script 6.
+Extension for Visual Studio Code to add snippets for React in ECMAScript 6.
 
 ![Extension demo](./images/snippet-demo.gif)
 

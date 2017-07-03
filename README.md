@@ -52,6 +52,8 @@ u-action            // Redux action
 u-it                // Jest test `it`
 u-desc              // Jest test `describe`
 u-suite             // Jest test suite (including import statements)
+u-afterEach         // Jest afterEach function
+u-beforeEach        // Jest beforeEach function
 ```
 
 ## Installation

@@ -97,6 +97,26 @@
 		],
 		"description": "Jest Test Suite"
 	},
+	"Jest afterEach": {
+		"prefix": "u-afterEach",
+		"body": [
+			"afterEach(() => {",
+			"\t$1",
+			"});",
+			""
+		],
+		"description": "Jest afterEach: Runs a function after each one of the tests in this file completes"
+	},
+	"Jest beforeEach": {
+		"prefix": "u-beforeEach",
+		"body": [
+			"beforeEach(() => {",
+			"\t$1",
+			"});",
+			""
+		],
+		"description": "Jest beforeEach: Runs a function before each of the tests in this file runs"
+	},
 	"PropTypes": {
 		"prefix": "u-pt",
 		"body": [

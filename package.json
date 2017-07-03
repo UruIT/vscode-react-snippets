@@ -2,7 +2,7 @@
 	"name": "uruit-react-snippets",
 	"displayName": "Uruit React Snippets",
 	"description": "React Snippets with ECMAScript 6",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "UruIT",
 	"icon": "images/uruit-logo.png",
 	"engines": {

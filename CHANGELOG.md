@@ -5,3 +5,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 - Initial release
+
+## [1.1.1] - 2017-07-04
+### Added
+- CHANGELOG.md
+- Troubleshooting section in README.md
+### Changed
+- Update `u-suite` snippet
+

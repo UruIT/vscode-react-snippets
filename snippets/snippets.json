@@ -88,9 +88,13 @@
 			"import renderer from 'react-test-renderer';",
 			"import { shallow } from 'enzyme';",
 			"",
+			"const PROPS = {",
+			"\t$0",
+			"}",
+			"",
 			"describe('$1', () => {",
 			"\tit('should render', () => {",
-			"\t\tconst wrapper = shallow(<$1 />);",
+			"\t\tconst wrapper = shallow(<$1 {...PROPS} />);",
 			"\t\texpect(wrapper.find('div').node).toBeTruthy();",
 			"\t});",
 			"});"
@@ -245,7 +249,7 @@
 			"\t}",
 			"}"
 		],
-		"description": "React PropType Any"
+		"description": "React custom PropType"
 	},
 	"PropTypes.CustomArrayProp": {
 		"prefix": "u-ptcustomarrayof",
@@ -256,7 +260,7 @@
 			"\t}",
 			"})"
 		],
-		"description": "React PropType Any"
+		"description": "React PropType CustomArrayOf"
 	},
 	"Redux actions": {
 		"prefix": "u-actions",

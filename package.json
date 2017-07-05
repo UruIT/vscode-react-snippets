@@ -1,16 +1,14 @@
 {
 	"name": "uruit-react-snippets",
-	"displayName": "Uruit React Snippets",
+	"displayName": "UruIT React Snippets",
 	"description": "React Snippets with ECMAScript 6",
-	"version": "1.0.1",
+	"version": "1.1.1",
 	"publisher": "UruIT",
 	"icon": "images/uruit-logo.png",
 	"engines": {
 		"vscode": "^1.13.0"
 	},
-	"categories": [
-		"Snippets"
-	],
+	"categories": ["Snippets"],
 	"homepage": "https://github.com/UruIT/vscode-react-snippets",
 	"repository": {
 		"type": "git",

@@ -88,14 +88,38 @@
 			"import renderer from 'react-test-renderer';",
 			"import { shallow } from 'enzyme';",
 			"",
+			"const PROPS = {",
+			"\t$0",
+			"}",
+			"",
 			"describe('$1', () => {",
 			"\tit('should render', () => {",
-			"\t\tconst wrapper = shallow(<$1 />);",
+			"\t\tconst wrapper = shallow(<$1 {...PROPS} />);",
 			"\t\texpect(wrapper.find('div').node).toBeTruthy();",
 			"\t});",
 			"});"
 		],
 		"description": "Jest Test Suite"
+	},
+	"Jest afterEach": {
+		"prefix": "u-afterEach",
+		"body": [
+			"afterEach(() => {",
+			"\t$1",
+			"});",
+			""
+		],
+		"description": "Jest afterEach: Runs a function after each one of the tests in this file completes"
+	},
+	"Jest beforeEach": {
+		"prefix": "u-beforeEach",
+		"body": [
+			"beforeEach(() => {",
+			"\t$1",
+			"});",
+			""
+		],
+		"description": "Jest beforeEach: Runs a function before each of the tests in this file runs"
 	},
 	"PropTypes": {
 		"prefix": "u-pt",
@@ -225,7 +249,7 @@
 			"\t}",
 			"}"
 		],
-		"description": "React PropType Any"
+		"description": "React custom PropType"
 	},
 	"PropTypes.CustomArrayProp": {
 		"prefix": "u-ptcustomarrayof",
@@ -236,7 +260,7 @@
 			"\t}",
 			"})"
 		],
-		"description": "React PropType Any"
+		"description": "React PropType CustomArrayOf"
 	},
 	"Redux actions": {
 		"prefix": "u-actions",

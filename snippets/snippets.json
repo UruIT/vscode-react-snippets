@@ -288,6 +288,26 @@
 		],
 		"description": "Redux action"
 	},
+	"Redux reducer": {
+		"prefix": "u-reducer",
+		"body":[
+			"import { $1 } from './$2.action';",
+			"",
+			"const DEFAULT_STATE = { $3 };",
+			"",
+			"export function homeReducer(state = DEFAULT_STATE, action) {",
+			"\tswitch (action.type) {",
+			"\t\tcase $1:",
+			"\t\t\treturn {",
+			"\t\t\t\t$0",
+			"\t\t\t};",
+			"\t\tdefault:",
+			"\t\t\treturn state;",
+			"\t}",
+			"}"
+		],
+		"description": "Redux reducer"
+	},
 	"JSX Element className": {
 		"prefix": "u-cn",
 		"body": [

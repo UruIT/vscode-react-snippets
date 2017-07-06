@@ -69,6 +69,17 @@ ext install uruit-react-snippets
 ```
 
 ## Troubleshooting
+
 If the snippets prefixes do not show up when typing them, make sure you have the tab-completion enabled in your settings: `"editor.tabCompletion": true`.
 
 Alternatively, you can choose *Insert Snippet* in the Command Palette (`Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on Windows or Linux).
+
+## Author
+
+* [UruIT](https://github.com/UruIT)
+
+### Contributors
+
+* [Matias Delgado](https://github.com/matiasdelgado)
+* [Carloluis Rodríguez](https://github.com/carloluis)
+

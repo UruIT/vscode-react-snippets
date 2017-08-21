@@ -1,5 +1,9 @@
 # React Snippets for Visual Studio Code
 
+[![](https://vsmarketplacebadge.apphb.com/version/UruIT.uruit-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=UruIT.uruit-react-snippets)
+[![](https://vsmarketplacebadge.apphb.com/installs/UruIT.uruit-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=UruIT.uruit-react-snippets)
+
+
 Extension for Visual Studio Code to add snippets for React in ECMAScript 6.
 
 ![Extension demo](./images/snippet-demo.gif)

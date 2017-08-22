@@ -24,7 +24,7 @@ u-rfc               // Functional component (stateless)
 
 * PropTypes
 ```javascript
-u-pt                // Generic PropType
+u-pt                // Generic PropType (string|number|func|...)
 u-pta               // Array PropType
 u-ptany             // Any PropType
 u-ptarrayof         // Array Of (PropType)

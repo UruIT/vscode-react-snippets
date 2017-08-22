@@ -125,7 +125,7 @@
 	"PropTypes": {
 		"prefix": "u-pt",
 		"body": [
-			"$1: PropTypes.$2.isRequired"
+			"$1: PropTypes.${2|string,number,bool,func,array,object,symbol,element,node,any|}.isRequired"
 		],
 		"description": "React PropType"
 	},

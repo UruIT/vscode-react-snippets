@@ -1,4 +1,4 @@
-# Change Log &middot; `uruit-react-snnipets`
+# Change Log
 
 All notable changes to the `uruit-react-snippets` extension will be documented in this file.
 
@@ -21,3 +21,18 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Added
 - Redux reducer snippet (`u-reducer`)
 
+## `[draft]` &middot; 2017-08
+
+### Added
+- Snippet choices support
+- React PropType snippet (`u-pt`) with options for:
+	* array
+	* bool
+	* func
+	* number
+	* object
+	* string
+	* symbol
+	* node
+	* element
+	* any

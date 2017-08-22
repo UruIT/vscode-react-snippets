@@ -1,5 +1,9 @@
 # React Snippets for Visual Studio Code
 
+[![](https://vsmarketplacebadge.apphb.com/version/UruIT.uruit-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=UruIT.uruit-react-snippets)
+[![](https://vsmarketplacebadge.apphb.com/installs/UruIT.uruit-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=UruIT.uruit-react-snippets)
+
+
 Extension for Visual Studio Code to add snippets for React in ECMAScript 6.
 
 ![Extension demo](./images/snippet-demo.gif)
@@ -10,7 +14,7 @@ Type the snippet prefix and press enter.
 
 * General
 ```javascript
-u-ci                // console.info
+u-ci                // console.info|log|error
 u-cn                // JSX element class name
 u-ctor              // Class constructor
 u-impt              // Import module statement
@@ -20,7 +24,7 @@ u-rfc               // Functional component (stateless)
 
 * PropTypes
 ```javascript
-u-pt                // Generic PropType
+u-pt                // Generic PropType (string|number|func|...)
 u-pta               // Array PropType
 u-ptany             // Any PropType
 u-ptarrayof         // Array Of (PropType)

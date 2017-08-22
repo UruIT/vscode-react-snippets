@@ -2,7 +2,8 @@
 	"Print to console": {
 		"prefix": "u-ci",
 		"body": [
-			"console.info('$1');"
+			"console.${1|info,log,error|}('$2');",
+			"$0"
 		],
 		"description": "Log output to console"
 	},
@@ -124,7 +125,7 @@
 	"PropTypes": {
 		"prefix": "u-pt",
 		"body": [
-			"$1: PropTypes.$2.isRequired"
+			"$1: PropTypes.${2|string,number,bool,func,array,object,symbol,element,node,any|}.isRequired"
 		],
 		"description": "React PropType"
 	},

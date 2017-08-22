@@ -2,7 +2,8 @@
 	"Print to console": {
 		"prefix": "u-ci",
 		"body": [
-			"console.info('$1');"
+			"console.${1|info,log,error|}('$2');",
+			"$0"
 		],
 		"description": "Log output to console"
 	},

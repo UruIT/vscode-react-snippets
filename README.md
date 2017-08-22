@@ -14,7 +14,7 @@ Type the snippet prefix and press enter.
 
 * General
 ```javascript
-u-ci                // console.info
+u-ci                // console.info|log|error
 u-cn                // JSX element class name
 u-ctor              // Class constructor
 u-impt              // Import module statement
